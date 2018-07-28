@@ -36,13 +36,14 @@ services:
 # Setup the Database (MySQL) container
 ###########################
     mysql:
+        container_name: mysql
         image: daocloud.io/library/mysql:5.7.4
         expose:
             - 3306
         volumes:
-            - database_data:/var/lib/mysql
+            - ./../mysql/test/:/var/lib/mysql/test/:rw
         environment:
             MYSQL_ROOT_PASSWORD: root
-            MYSQL_DATABASE: project
-            MYSQL_USER: root
-            MYSQL_PASSWORD: root
+            MYSQL_DATABASE: test
+            MYSQL_USER: test
+            MYSQL_PASSWORD: test
