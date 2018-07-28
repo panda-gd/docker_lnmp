@@ -13,4 +13,4 @@ docker 一键lnmp
 * __阿里云docker镜像地址: __: <https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo>
 
 3. 安装docker-compose
-https://docs.docker.com/compose/install/#install-compose
+* __docker-compose地址: __: <https://docs.docker.com/compose/install/#install-compose>
